@@ -7,16 +7,16 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
-import ContactsScreen from './src/screens/ContactsScreen';
-import CallingScreen from './src/screens/CallingScreen';
-import IncomingCallScreen from './src/screens/incomingCallScreen';
+
+import {StatusBar} from 'react-native';
+
+import Navigation from './src/navigation';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle={'dark-content'} />
-      <IncomingCallScreen />
+      <Navigation />
     </>
   );
 };
