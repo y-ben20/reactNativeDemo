@@ -13,6 +13,11 @@ const Navigation = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Contacts" component={ContactsScreen} />
+        <Stack.Group screenOptions={{headerShown: false}}>
+          <Stack.Screen name="Call" component={CallScreen} />
+          <Stack.Screen name="Calling" component={CallingScreen} />
+          <Stack.Screen name="IncomingCall" component={IncomingCallScreen} />
+        </Stack.Group>
       </Stack.Navigator>
     </NavigationContainer>
   );
